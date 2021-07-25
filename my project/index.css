@@ -1,0 +1,150 @@
+:root{
+  font-size:18px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:'kumbh sans',sans-serif;
+  color: hsl(0,11%,12%);
+}
+section{
+  background:hsl(185,75%,39%);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  overflow: hidden;
+}
+.card{
+  width:350px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+}
+.card-body{
+  padding: 0 20px 25px;
+}
+.card-header{
+  background-image: url(file:///C:/Users/YRAR/Downloads/front%20end%20mentor/profile-card-component-main/images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+}
+.img-holder{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:5px solid white;
+  overflow:hidden;
+  margin: -55px auto 30px auto;
+}
+.img-holder img{
+  width: 100%;
+  height:auto;
+  display: block;
+}
+.name-age{
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.age,
+.city,
+.meta{
+  font-weight: 400;
+  color: hsl(0,11%,12%);
+  opacity: .6;
+}
+.age{
+  font-weight: 400;
+  margin-left: 6px;
+}
+.city{
+  font-size: .9rem;
+}
+.card-footer{
+  border-top: 1px solid hsl(0, 3%, 76%);
+  display: flex;
+  padding: 0 25px;
+}
+.card-footer .item{
+  flex: 1;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+.card-footer .item .value{
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.card-footer .item .meta {
+  font-size: .6rem;
+  letter-spacing: 1px;
+}
+/*GRAPHICS (circlES)*/
+.circles .c1,
+.circles .c2{
+  position: absolute;
+  width: 800px;
+  height: auto;
+  animation: 2s circles forwards;
+  opacity: 0;
+}
+.circles .c1{
+  top:-300px;
+  left: -175px;
+  transform: translate(-100px, -50px);
+}
+.circles .c2{
+  bottom: -300px;
+  right: -175px;
+  transform: translate(-100px, -50px);
+}
+
+@keyframes circles{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.attribution{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(90%);
+  transition: .4s;
+  padding: 20px;
+  background: black;
+  text-align: center;
+  color: azure;
+}
+
+.attribution:hover{
+  transform: translateY(0);
+}
+
+.attribution::before{
+  content:'';
+  background: grey;
+  width: 100%;
+  height: 50px;
+  bottom: 100%;
+  left: 0;
+}
